@@ -1,0 +1,10 @@
+E:\tit\tit_task\tit_task\bin\Debug\tit_task.exe.config
+E:\tit\tit_task\tit_task\bin\Debug\tit_task.exe
+E:\tit\tit_task\tit_task\bin\Debug\tit_task.pdb
+E:\tit\tit_task\tit_task\bin\Debug\Newtonsoft.Json.dll
+E:\tit\tit_task\tit_task\bin\Debug\Newtonsoft.Json.xml
+E:\tit\tit_task\tit_task\obj\Debug\tit_task.csprojAssemblyReference.cache
+E:\tit\tit_task\tit_task\obj\Debug\tit_task.csproj.CoreCompileInputs.cache
+E:\tit\tit_task\tit_task\obj\Debug\tit_task.csproj.CopyComplete
+E:\tit\tit_task\tit_task\obj\Debug\tit_task.exe
+E:\tit\tit_task\tit_task\obj\Debug\tit_task.pdb
