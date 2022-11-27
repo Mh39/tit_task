@@ -47,29 +47,29 @@ namespace tit_task
         }
         public static void convertfile(string in_file_path, string out_file_path)
         {
-            //if (!CheckFileExist(in_file_path))
-            //    throw new Exception("File Not Found");
-            //if (!CheckCorrectFileName(in_file_path))
-            //    throw new Exception("incorrect file name");
+            if (!CheckFileExist(in_file_path))
+                throw new Exception("File Not Found");
+            if (!CheckCorrectFileName(in_file_path))
+                throw new Exception("incorrect file name");
             var fileData = ReadFileLines(in_file_path);
-            //if (fileData.Length == 0)
-            //    throw new Exception("File empty");
-            //if (!CheckFirstLine(fileData[0], fileData.Length))
-            //    throw new Exception("invalid first line");
+            if (fileData.Length == 0)
+                throw new Exception("File empty");
+            if (!CheckFirstLine(fileData[0], fileData.Length))
+                throw new Exception("invalid first line");
             for (int i = 1; i < fileData.Length; i++)
             {
                 if (!IsLineValid(fileData[i]))
                     throw new Exception($"invalid line data {i}");
             }
             var persons = FillData(fileData);
-            //WriteDataToJsonFile(out_file_path, persons);
+            WriteDataToJsonFile(out_file_path, persons);
         }
-        //public static string WriteDataToJsonFile(string outPath, List<person> personsList)
-        //{
-        //    var json = JsonConvert.SerializeObject(personsList);
-        //    File.WriteAllText(outPath, json);
-        //}
-        public static List<person> FillData(string[] fileData)
+        public static string WriteDataToJsonFile(string outPath, List<person> personsList)
+        {
+            var json = JsonConvert.SerializeObject(personsList);
+            File.WriteAllText(outPath, json);
+            //}
+            public static List<person> FillData(string[] fileData)
         {
             var persons = new List<person>();
             for (int i = 1; i < fileData.Length; i++)
